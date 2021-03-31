@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 ### Added
-
+- Add `HuggingfaceDatasetSplitReader` for using huggingface datasets in AllenNLP with limited support
 - Ported the following Huggingface `LambdaLR`-based schedulers: `ConstantLearningRateScheduler`, `ConstantWithWarmupLearningRateScheduler`, `CosineWithWarmupLearningRateScheduler`, `CosineHardRestartsWithWarmupLearningRateScheduler`.
 
 ### Changed
@@ -264,7 +264,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added sampler class and parameter in beam search for non-deterministic search, with several
   implementations, including `MultinomialSampler`, `TopKSampler`, `TopPSampler`, and
   `GumbelSampler`. Utilizing `GumbelSampler` will give [Stochastic Beam Search](https://api.semanticscholar.org/CorpusID:76662039).
-
+    
 ### Changed
 
 - Pass batch metrics to `BatchCallback`.
